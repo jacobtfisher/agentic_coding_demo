@@ -10,6 +10,33 @@ This dataset contains thousands of posts from the popular subreddit r/AmItheAssh
 
 - **Original Context:** Reddit users post a situation, and the community votes on a verdict.
 
+## Important: Git LFS and Working with This Dataset
+
+This dataset file (`aita.csv`) is **very large (649MB)** and is managed using **Git LFS** (Large File Storage) in this repository.
+
+### Recommended Approach
+
+**You do NOT need to install Git LFS to work with this dataset.** Instead, I recommend you:
+
+1. **Download the dataset directly** from the [Hugging Face repository](https://huggingface.co/datasets/OsamaBsher/AITA-Reddit-Dataset).
+
+2. **Add data files to `.gitignore`**: If you create any modified versions, cleaned datasets, or analysis outputs (e.g., `aita_cleaned.csv`, `aita_processed.csv`, `aita_sample.csv`), add them to your `.gitignore` file to avoid accidentally committing large files:
+
+   ```
+   # AITA dataset and derivatives
+   data/aita/*.csv
+   ```
+
+3. **Work with data locally**: Keep your data files on your local machine and reference them in your code. This avoids Git LFS complexity while still allowing you to work with the full dataset.
+
+### If You Need Git LFS (Advanced)
+
+If you absolutely need to clone the full dataset via Git, you'll need to:
+
+- Install Git LFS: `brew install git-lfs` (macOS) or see [git-lfs.github.com](https://git-lfs.github.com/)
+- Initialize it: `git lfs install`
+- Pull the file: `git lfs pull` or `git pull`
+
 ## Data Description
 
 The dataset typically contains the text of the user's story and the final community verdict.

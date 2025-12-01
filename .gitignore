@@ -1,0 +1,41 @@
+# AITA dataset and derivatives
+# Students: Add any modified/processed versions of the dataset here
+data/aita/*.csv
+data/aita/*.parquet
+data/aita/*.feather
+data/aita/*.xlsx
+data/aita/*.json
+!data/aita/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
